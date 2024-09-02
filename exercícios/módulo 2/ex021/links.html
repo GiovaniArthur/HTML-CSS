@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="faviconJS.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('heartlove.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+            @font-face {
+            font-family: 'love';
+            src: url('heartlove.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgba(255, 0, 0, 0.247);
+        }
+
+        .especial::before {
+            content: '→ ';
+        }
+
+        .especial::after {
+            content: ' ←';
+        }
+        
+        .princesa {
+            background-color: rgba(255, 0, 191, 0.247);
+            font-family: 'love', serif;
+            font-size: 3em;
+        }
+
+        .princesa::before {
+            content: '♥ ';
+        }
+
+        .princesa::after {
+            content: ' ♥';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/GiovaniArthur">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/g1ovani_arthur/" class="especial">Perfil no Instagram</a></li>
+        <li><a href="https://www.instagram.com/my.brendally/" class="princesa">Minha Princesa</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-color: rgb(42, 34, 49);
+    
+}
+h1 {
+    color: white;
+    text-align: center
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    margin: auto;
+    padding: 100px;
+}

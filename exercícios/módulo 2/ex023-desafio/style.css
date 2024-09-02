@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: #c4e7cc;
+}
+
+header {
+    font-family: 'Bebas Neue';
+    background-image: linear-gradient(to bottom, #17D145, #0A5D1F);
+    color: white;
+    text-shadow: 3px 3px 1px 0px black;
+    height: 100%;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.473);
+}
+
+header > p {
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+}
+
+.principal{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.menu {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.menu:hover {
+    text-align: left;
+    text-decoration: none ;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+main{
+    background-color: white;
+    width: 800px;
+    margin:auto;
+    text-align: justify;
+    text-indent: 30px ;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.473);
+}
+
+main > h1{
+    font-family: 'idroid';
+    color: #073F15;
+}
+
+li{
+    display: flex;
+}
+
+h2 {
+    font-family: 'idroid';
+    color: #073F15;
+    background-image: linear-gradient(to right, #c2f0cd, #ffffff);
+
+}
+
+.green {
+    color: #074015;
+    text-decoration: none;
+}
+
+.green:hover {
+    color: #3FE067;
+}
+
+picture {
+    margin: auto;
+}
+
+article {
+    background-color: #0A5D1F;
+    padding: 20px;
+}
+
+.extra {
+    background-color: #c2f0cd;
+    border-radius: 15px;
+}
+
+.extra > h3 {
+    background-color: #119832;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: #0A5D1F;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px
+}

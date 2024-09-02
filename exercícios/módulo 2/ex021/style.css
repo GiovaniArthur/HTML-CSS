@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'love';
+    src: url('heartlove.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'love';
+    src: url('heartlove.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'romantica';
+    src: url('Romantica.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'romantica';
+    src: url('Romantica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(245, 100, 124), rgb(223, 27, 92), rgb(245, 100, 124));
+    height: 100%;
+}
+
+div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #a1816c;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+a {
+    color: red;
+}
+
+h1 {
+    font-family: 'romantica';
+    font-size: 4em;
+    color: darkred;
+    
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+}
+.princesa {
+    font-family: 'love', serif;
+    font-size: 2em;
+}
+
+.princesa::before {
+    content: '♥ ';
+}
+
+.princesa::after {
+    content: ' ♥';
+}
