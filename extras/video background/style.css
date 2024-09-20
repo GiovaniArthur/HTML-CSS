@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+
+body {
+    font-family: 'Lacquer';
+    margin: 0px;
+    font-size: 16px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header {
+    width: 1700px;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header > nav > ul > li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner  {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -50px;
+}
+
+.banner .content {
+    text-align: center;
+    color: red;
+    text-shadow: 0px 10px 50px #630707;
+}
+
+.banner .content .title {
+    font-size: 6em;
+    animation: animationBlur 5s linear infinite;
+}
+
+@keyframes animationBlur {
+    0%, 80% {
+        filter: blur(0);
+    }90% {
+        filter: blur(5px);
+    }100% {
+        filter: blur(0);
+    }
+}
+
+.banner .content .des {
+    text-align: left;
+    rotate: -5deg;
+}
+
+.banner .bgVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue";
+    font-size: 1.3rem;
+    color: white;
+}
+
+.l-wrapper {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "aside-main"
+        "sidebar"
+        "aside-sec"
+        "footer"
+    ;
+    height: 100vh;
+    margin: 0 auto;
+    /*max-width: 1200px; /* total width: comment this */
+}
+
+@media (min-width: 48em) { /* 768px */
+    .l-wrapper {
+        grid-template-columns: 1fr repeat(4, minmax(auto, 200px)) 1fr ; /* total width: 1fr repeat(4, minmax(auto, 200px)) 1fr */
+        grid-template-rows: .5fr 2fr .5fr .5fr;
+        grid-template-areas:
+            "header header     header     header    header    header"
+            ".      main       main       main      sidebar   .     "
+            ".      aside-main aside-main aside-sec aside-sec .     "
+            "footer footer     footer     footer    footer    footer"
+        ;
+    }
+}
+
+.l-header {
+    background-color: skyblue;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-main {
+    background-color: coral;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-sidebar {
+    background-color: royalblue;
+    grid-area: sidebar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-aside-main {
+    background-color: rebeccapurple;
+    grid-area: aside-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-aside-sec {
+    background-color: rebeccapurple;
+    grid-area: aside-sec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-footer {
+    background-color: skyblue;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
