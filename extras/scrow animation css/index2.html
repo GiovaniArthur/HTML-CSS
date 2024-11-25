@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        overflow: hidden;
+        transition: background-color 0.5s ease, height 0.5s ease;
+        z-index: 10;
+    }
+
+    .background-image {
+        background-image: url('https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua pela sua imagem */
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .solid {
+        background-image: none;
+        background-color: #285D81; /* Cor sólida */
+        height: 60px; /* Altura do header quando rolado */
+    }
+
+    main {
+        margin-top: 100vh; /* Para evitar que o conteúdo fique atrás do header */
+        padding: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="background-image"></div>
+    </header>
+    <main>
+        <section>
+            <h1>Conteúdo do Site</h1>
+            <p>Adicione mais conteúdo aqui para ver o efeito ao rolar.</p>
+        </section>
+    </main>
+
+    <script>
+        window.addEventListener('scroll', () => {
+                const header = document.getElementById('header');
+
+                if (window.scrollY > 0) {
+                    header.classList.add('solid');
+                } else {
+                    header.classList.remove('solid');
+                }
+            });
+    </script>
+</body>
+</html>
